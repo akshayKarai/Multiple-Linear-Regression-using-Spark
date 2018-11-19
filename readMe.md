@@ -1,34 +1,20 @@
-Assignment 4
-
-Name: Akshay karai
-Email: akarai@uncc.edu
+## Multiple Linear Regression using Spark
 
 Main file is linreg.py
-_____________________________________________________________________
 
-Step 1: Copy the python file and input files into dsba-cluster
+- Step 1: Copy the python file and input files into Cloudera VM
 
-scp linreg <username>@dsba-hadoop.uncc.edu:/users/<username> 
-
-scp yxlin.csv <username>@dsba-hadoop.uncc.edu:/users/<username> 
-
-_____________________________________________________________________
+- Step 2: Copy the python file and input files into hadoop filesystem
 			
-Step 2: Copy the python file and input files into hadoop filesystem
+- Step 3: Execute the code using spark-submit 
 
-hadoop fs -put yxlin.csv /user/<username>/
-
-_____________________________________________________________________
-			
-Step 3: Execute the code using spark-submit 
-
+```
  spark-submit linreg.py <inputdatafile>
-_____________________________________________________________________
+```
 
+Output will be printed in the console. Beta values will be printed
 
-Output will printed in the console. Beta values will be printed
-
-Output files are also included ( xylin.out , xylin2.out )
+Output files are ( xylin.out , xylin2.out )
 
 
 
